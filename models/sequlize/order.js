@@ -1,5 +1,6 @@
-const { DataTypes } = require('sequlize');
+const { DataTypes } = require('sequelize');
 const sequlize = require('../../config/databse');
+const User = require('./user');
 
 
 const Order = sequlize.define('Order',{
@@ -10,7 +11,7 @@ const Order = sequlize.define('Order',{
     userId: {type: DataTypes.INTEGER,
         allowNull: false,
         references:{
-            model: UserActivation,
+            model: User,
             key: 'id',
         }
     },

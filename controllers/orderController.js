@@ -1,7 +1,7 @@
 const { User, Order } = require('../models/sequlize');
 const Product = require('../models/mongoose/product');
-const product = require('../models/mongoose/product');
-const product = require('../models/mongoose/product');
+//const product = require('../models/mongoose/product');
+//const product = require('../models/mongoose/product');
 
 async function createOrder(req, res) {
     const {userId, orderItems } = req.body;

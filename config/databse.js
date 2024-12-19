@@ -1,7 +1,7 @@
-const { Sequlize } = require('sequlize');
+const { Sequelize } = require('sequelize');
 
-const sequlize = new Sequlize('Management_System',
-    'Shubhangi', '',{
+const sequlize = new Sequelize('ordermanagement',
+    'postgres', 'om',{
         host: 'localhost',
         dialect: 'postgres',
         logging: false
